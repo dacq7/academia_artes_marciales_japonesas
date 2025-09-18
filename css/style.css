@@ -1,0 +1,193 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y elegante */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo gris claro para el resto de la página */
+    color: #333; /* Texto oscuro para buen contraste */
+    line-height: 1.6;
+}
+
+/* Sección Hero (fondo dojo.png) */
+.hero {
+    background-image: url('../assets/dojo.png'); /* Ruta correcta */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Sombra en el texto para mayor contraste */
+}
+
+.hero h1 {
+    font-size: 4.5em;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: 300;
+    max-width: 800px;
+    line-height: 1.8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Secciones */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff; 
+    margin-top: -5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-family: 'Arial', sans-serif; /* Fuente diferente para los títulos */
+}
+
+section p {
+    font-size: 1.3em; /* Aumentar tamaño de los párrafos */
+    color: #555;
+    line-height: 1.8;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial', sans-serif; /* Estilo de letra más limpio */
+}
+
+/* Estilo de las imágenes en las secciones */
+section img {
+    max-width: 40%; /* Reducir el tamaño de las imágenes */
+    height: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse sobre las imágenes */
+}
+
+/* Sección Contacto */
+#contacto {
+    background-color: #f9f9f9;
+}
+
+#contacto h2 {
+    font-size: 2.8em;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+#contacto p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+address {
+    font-style: normal;
+    font-size: 1.2em;
+    color: #444;
+    margin-top: 20px;
+}
+
+/* Estilo de los enlaces */
+a {
+    text-decoration: none;
+    color: #E94E77; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #333; 
+}
+
+/* Footer */
+footer {
+    background-color: #222; 
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 1.1em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries (Responsividad) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3.2em;
+    }
+
+    .hero p {
+        font-size: 1.3em;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    section h2 {
+        font-size: 2.2em;
+    }
+
+    section p {
+        font-size: 1.1em;
+    }
+
+    #contacto h2 {
+        font-size: 2.5em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.6em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    section h2 {
+        font-size: 1.9em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}
+
